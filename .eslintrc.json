@@ -1,0 +1,126 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["prettier", "react", "import"],
+  "globals": {},
+  "parserOptions": {
+    "allowImportExportEverywhere": true,
+    "parser": "@babel/eslint-parser",
+    "sourceType": "module",
+    "ecmaVersion": 11,
+    "requireConfigFile": false
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@utils", "./src/utils"],
+          ["@components", "./src/components"]
+          // Add more aliases as needed
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 200,
+        "ignoreUrls": true
+      }
+    ],
+    "import/named": ["off"],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": ["^@", "^www/"]
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "radix": ["error", "as-needed"],
+    "consistent-return": ["off"],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id",
+          "_boundary",
+          "_debug",
+          "__",
+          "_auditForecastedSoilMoisture"
+        ]
+      }
+    ],
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "arrow-parens": [
+      0,
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "indent": "off",
+    "no-shadow": [
+      "error",
+      {
+        "allow": ["state"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-restricted-globals": "off",
+    "no-unused-expressions": "off",
+    "eol-last": ["error", "always"],
+    "react/require-default-prop": 0,
+    "react/html-indent": "off",
+    "react/max-attributes-per-line": "off",
+    "react/singleline-html-element-content-newline": "off",
+    "react/html-self-closing": "off",
+    "react/multi-word-component-names": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "before",
+          ":": "before"
+        }
+      }
+    ],
+    "import/no-absolute-path": 0,
+    "import/extensions": 0,
+    "object-shorthand": [
+      "error",
+      "always",
+      {
+        "avoidQuotes": false
+      }
+    ],
+    "space-before-function-paren": 0,
+    "func-names": 0,
+    "prefer-arrow-callback": 0
+  }
+}

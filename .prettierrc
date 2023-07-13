@@ -1,0 +1,79 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.jsx",
+      "options": {
+        "semi": true,
+        "printWidth": 120,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "parser": "flow",
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "arrowParens": "avoid"
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "semi": true,
+        "printWidth": 120,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "parser": "flow",
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "arrowParens": "avoid"
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 2,
+        "parser": "html"
+      }
+    },
+    {
+      "files": "*.{css,scss,less,sss}",
+      "options": {
+        "tabWidth": 4,
+        "semi": true,
+        "bracketSpacing": true
+      }
+    },
+    {
+      "files": "*.jsx",
+      "options": {
+        "parser": "flow",
+        "reactIndentScriptAndStyle": true,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "printWidth": 120,
+        "bracketSpacing": true,
+        "semi": true,
+        "jsxBracketSameLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    },
+    {
+      "files": "*.yaml",
+      "options": {
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "singleQuote": true,
+        "parser": "yaml"
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
